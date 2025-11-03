@@ -16,9 +16,12 @@
                 font-size: 18px;
                 flex: 1;
             }
-            h1 {
+            header {
                 font-size: 19px;
                 display: flex;
+                padding: 30px 30px;
+                background: grey;
+                margin-top: 0px;
             }
             a {
                 text-decoration: none;
@@ -26,29 +29,50 @@
             .info {
                 background: black;
                 color: grey;
-                min-height: 100vh;
-                padding: 15px 0;
+                min-height: 40vh;
+                padding: 50px 0;
                 width: 100%;
                 margin-top: 15px 0;
             }
             .info-form {
                 width: 100%;
+                padding-top: 30px;
             }
             
             .info h2, p {
                 font-size: 17px;
                 text-align: center;
             }
+            ul, li, a {
+                list-style-type: none;
+                padding: 15px;
+                color: grey;
+            }
+            ul, li, a:hover {
+                color: green;
+            }
+            .menu-icon a {
+                text-align: right;
+            }
         </style>
     </head>
     <body>
+        <header>Group info
+        </header>
         <div class="container">
-            <h1><b>Announcement!  Announcement! Announcement!</b></h1>
-            <p>Hello! Members of family06 i would like to inform you that there will be a simple outing in Morogoro</p>
-            <p>I would like to inform all that this trip will be done on <a href="#">Date</a> were it will consider two places in one day 1 is <a href="#">Place</a> and another is <a href="#">Place</a></p>
-            <p>So all Members of family06 be prepared, you can also invite your fellow to join our party</p>
-            <p><a href="#">Members in trip</a></p>
-            <a href="index.html">menu</a>
+            <p style="color:grey;">Safe and secure</p>
+            <ul>
+                <li><a href="group_announcement.html">Group Announcements</a></li>
+                <li><a href="#">Group posts</a></li>
+                <li><a href="#">Mzumbe election site</a></li>
+                <li><a href="#">MU-ARMS</a></li>
+                <li><a href="#">MU Timetable</a></li>
+                <li><a href="#">Mzumbe site</a></li>
+                <li><a href="#">MU almanac</a></li>
+            </ul>
+            <div class="menu-icon">
+                <a href="index.html">Home</a>
+            </div>
         </div>
         <footer class="info">
             <div class="info-form">
@@ -57,7 +81,7 @@
                 <p>+255 655 205 839</p>
                 <p>prosesprojestus0@gmail.com</p>
                 <h2>Quick links</h2>
-                <p><a href="#">Group announcements</a></p>
+                <p><a href="group_announcement.html">Group announcements</a></p>
                 <p><a href="#">Group posts</a></p>
                 <p><a href="#">Creativity</a></p>
                 <p>&copy; 2025 All rights reserved</p>
