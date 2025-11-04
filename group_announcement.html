@@ -32,15 +32,34 @@
                 padding-top: 180px;
                 text-align: center;
             }
+            .top-nav {
+                display: flex;
+                justify-content: space-between;
+                padding: 18px;
+                list-style: none;
+                
+            }
+            .top-nav a {
+                text-decoration: none;
+                color: black;
+            }
+            .top-nav a:hover {
+                color: green;
+            }
         </style>
     </head>
     <body>
-        <header>Group Announcement</header>
+        <header>Group Announcement
+        <nav class="top-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page.html">Group info</a></li>
+        </nav>
+        </header>
         <div class="form-container">
-            <h1>Announcement!</h1>
+            <h1>Announcement! 1</h1>
             <p>Hello!</p>
             <p>Members of family06, the trip is approved on date<mark> 29 november 2025</mark></p>
-            <p>places where this trip will take place:</p>
+            <p>places where this trip will take place: <p style="color:red;">Not yet approved</p></p>
             <p>each member has to contribute 22,000.<br>10,000 for orphanage and 12,000 for outing</p>
             <p>invite your friend, relative to join our family06 trip</p>
             <p>Together we can</p>
