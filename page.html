@@ -10,6 +10,7 @@
                 padding: 0;
                 font-family: Arial;
                 height: 100%;
+                background: #FAEBD7;
             }
             .container {
                 padding: 13px;
@@ -54,37 +55,86 @@
             .menu-icon a {
                 text-align: right;
             }
+            .navbar {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding: 10px;
+                background: grey;
+                position: relative;
+            }
+            navbar button {
+                background: none;
+                font-size: 22px;
+                border: none;
+                cursor: pointer;
+            }
+            .menu li {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                cursor: pointer;
+            }
+            .menu {
+                margin: 0;
+                padding: 10px;
+                background: #FAEBD7;
+                border-radius: 6px;
+                position: absolute;
+                top: 45px;
+                right: 15px;
+                width: 160px;
+                list-style-type: none;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            }
+            .hidden {
+                display: none;
+            }
+            .menu li:last-child {
+                border-bottom: none;
+            }
+            menu li:hover {
+                background: #f0f0f0;
+            }
+            .logo {
+                width: 100%;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
         </style>
     </head>
     <body>
         <header>Group info
-        </header>
-        <div class="container">
-            <p style="color:grey;">Safe and secure</p>
-            <p style="color:green;">incase of group announcements please click the group announcement link</p>
-            <ul>
-                <li><a href="group_announcement.html">Group Announcements</a></li>
-                <li><a href="#">Group posts</a></li>
-                <li><a href="#">Mzumbe election site</a></li>
+        <div class="navbar">
+            <button id="menuBtn">&#9776;</button>
+            <ul id="menu" class="menu hidden">
+                <li><a href="group_announcement.html">Group Announcement</a></li>
                 <li><a href="https://arms.mzumbe.ac.tz" target="_blank" rel="noopener noreferrer">MU-ARMS</a></li>
                 <li><a href="https://mutimetable.mzumbe.ac.tz" target="_blank" rel="noopener noreferrer">MU Timetable</a></li>
                 <li><a href="https://admission.mzumbe.ac.tz" target="_blank" rel="noopener noreferrer">Mzumbe site</a></li>
                 <li><a href="#">MU almanac</a></li>
                 <li><a href="https://elearning.mzumbe.ac.tz" target="_blank" rel="noopener noreferrer">E-learning</a></li>
             </ul>
+            </ul>
+        </div>
+        </header>
+        <div class="container">
+            <p style="color:grey;">Safe and secure</p>
+            <p style="color:green;">incase of group announcements please click the group announcement link</p>
             <div class="menu-icon">
                 <a href="index.html">Home</a>
             </div>
         </div>
+        <div class="logo">
+                <img src="images/file_00000000b9b4722fa8ecec9dcea736d1 (1).png" alt="Image">
+            </div>
         <footer class="info">
             <div class="info-form">
                 <h2>Contacts</h2>
                 <p>+255 780 686 067</p>
                 <p>+255 655 205 839</p>
-
-                <p>SEND EMAIL</p>
                 <p><a href="mailto:prosesprojestus0@gmail.com">prosesprojestus0@gmail.com</a></p>
-                
                 <h2>Quick links</h2>
                 <p><a href="group_announcement.html">Group announcements</a></p>
                 <p><a href="#">Group posts</a></p>
@@ -93,5 +143,12 @@
                 <p>&copy; 2025 All rights reserved</p>
             </div>
         </footer>
+        <script>
+            const btn = document.getElementById("menuBtn");
+            const menu = document.getElementById("menu");
+            btn.onclick = () => {
+                menu.classList.toggle("hidden");
+            };
+        </script>
     </body>
 </html>
